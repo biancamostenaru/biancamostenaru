@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mostenaru Bianca Maria — Portofoliu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="home" class="site-header">
+    <div class="container header-inner">
+      <h1>Mostenaru Bianca Maria</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#home">Acasă</a></li>
+          <li><a href="#about">Despre mine</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#cv">CV / Documente</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="container section about">
+      <h2>Despre mine</h2>
+      <p>
+        Nume: <strong>Mostenaru Bianca Maria</strong><br/>
+        Adresa de email: <strong>mostenarubianca25@stud.ase.ro</strong><br/>
+        Sunt elevă/studentă interesată de dezvoltare personală și proiecte digitale.
+      </p>
+
+      <p>
+        Acest site este realizat pentru îndeplinirea cerințelor practică pentru materia/tema indicată.
+      </p>
+    </section>
+
+    <section id="gallery" class="container section gallery">
+      <h2>Galerie — 2 imagini (surse)</h2>
+
+      <figure class="photo">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80&auto=format&fit=crop" alt="Peisaj">
+        <figcaption>
+          Peisaj — sursă: <a href="https://unsplash.com/photos/6jYoil2GhVk" target="_blank" rel="noopener">Unsplash / Photo by eberhard grossgasteiger</a>
+        </figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80&auto=format&fit=crop" alt="Laptop și notițe">
+        <figcaption>
+          Laptop & notițe — sursă: <a href="https://unsplash.com/photos/AKeG0ygw4p8" target="_blank" rel="noopener">Unsplash / Photo by Christina Morillo</a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="cv" class="container section cv-section">
+      <h2>CV — Europass</h2>
+      <p>
+        CV-ul în format Europass este disponibil pentru descărcare (fișier PDF).
+      </p>
+      <p>
+        <a class="btn" href="CV - Bianca Maria Moștenaru.pdf" download>Descarcă CV (PDF)</a>
+      </p>
+
+      <h3>Link extern util</h3>
+      <ul>
+        <li><a href="https://europa.eu/europass/ro/create-europass-cv" target="_blank" rel="noopener">Creează Europass CV — europa.eu</a></li>
+      </ul>
+    </section>
+
+    <section id="resources" class="container section resources">
+      <h2>Link-uri</h2>
+
+      <h3>Link-uri interne (4)</h3>
+      <ul>
+        <li><a href="#home">Acasă</a></li>
+        <li><a href="#about">Despre mine</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <h3>Link-uri externe (4)</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/biancamostenaru/" target="_blank" rel="noopener">Instagram (biancamostenaru)</a></li>
+        <li><a href="https://europa.eu/europass/ro/create-europass-cv" target="_blank" rel="noopener">Europass — creare CV</a></li>
+        <li><a href="https://www.ase.ro" target="_blank" rel="noopener">ASE (Academia de Studii Economice)</a></li>
+        <li><a href="https://www.cambridge.org" target="_blank" rel="noopener">Cambridge (examen PET / informații)</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2>Contact</h2>
+      <p>Puteți trimite un mesaj către adresa mea. Formularul va genera un e-mail precompletat (se deschide clientul de mail implicit).</p>
+
+      <form id="contactForm">
+        <label>
+          Numele dvs.:
+          <input type="text" name="name" id="name" required />
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" id="email" required />
+        </label>
+
+        <label>
+          Subiect:
+          <input type="text" name="subject" id="subject" required />
+        </label>
+
+        <label>
+          Mesaj:
+          <textarea name="message" id="message" rows="6" required></textarea>
+        </label>
+
+        <button type="submit" class="btn">Trimite mesaj</button>
+      </form>
+
+      <p class="note">Dacă nu se deschide clientul de mail, copiați adresa: <strong>mostenarubianca25@stud.ase.ro</strong></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Autor: <strong>Mostenaru Bianca Maria</strong> — &nbsp;Email: <a href="mailto:mostenarubianca25@stud.ase.ro">mostenarubianca25@stud.ase.ro</a></p>
+      <p>Proiect livrabil — site de prezentare personală</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

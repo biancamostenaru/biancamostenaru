@@ -4,18 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mostenaru Bianca Maria — Portofoliu</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header id="home" class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
-      <h1>Mostenaru Bianca Maria</h1>
-      <nav>
-        <ul class="nav">
+      <div class="brand">
+        <h1>Mostenaru Bianca Maria</h1>
+        <p class="tag">Portofoliu | CV Europass</p>
+      </div>
+
+      <nav class="nav" id="mainNav">
+        <button class="nav-toggle" id="navToggle" aria-label="Meniu">&#9776;</button>
+        <ul class="nav-list">
           <li><a href="#home">Acasă</a></li>
           <li><a href="#about">Despre mine</a></li>
           <li><a href="#gallery">Galerie</a></li>
-          <li><a href="#cv">CV / Documente</a></li>
+          <li><a href="#cv">CV</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -23,108 +33,115 @@
   </header>
 
   <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Bună, eu sunt <span class="accent">Bianca Maria</span></h2>
+          <p>Sunt elevă/studentă interesată de proiecte digitale, comunicare și dezvoltare personală. Acest site prezintă CV‑ul meu Europass și câteva lucrări/imagini.</p>
+          <p class="hero-actions">
+            <a class="btn" href="#cv">Descarcă CV</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </p>
+        </div>
+
+        <div class="hero-image" aria-hidden="true">
+          <!-- imagine decorativă: sursă menționată în galerie -->
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80&auto=format&fit=crop" alt="Ilustraţie creativă">
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="container section about">
       <h2>Despre mine</h2>
-      <p>
-        Nume: <strong>Mostenaru Bianca Maria</strong><br/>
-        Adresa de email: <strong>mostenarubianca25@stud.ase.ro</strong><br/>
-        Sunt elevă/studentă interesată de dezvoltare personală și proiecte digitale.
-      </p>
-
-      <p>
-        Acest site este realizat pentru îndeplinirea cerințelor practică pentru materia/tema indicată.
-      </p>
+      <p><strong>Nume:</strong> Mostenaru Bianca Maria</p>
+      <p><strong>Email:</strong> <a href="mailto:mostenarubianca25@stud.ase.ro">mostenarubianca25@stud.ase.ro</a></p>
+      <p>Elevă la Colegiul Economic / interes pentru tehnologie, limbi străine și activități extracurriculare. Am pregătit acest site pentru tema/proiectul de web.</p>
     </section>
 
     <section id="gallery" class="container section gallery">
-      <h2>Galerie — 2 imagini (surse)</h2>
+      <h2>Galerie</h2>
+      <div class="grid">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80&auto=format&fit=crop" alt="Peisaj montan">
+          <figcaption>Peisaj montan — sursă: <a href="https://unsplash.com/photos/6jYoil2GhVk" target="_blank" rel="noopener">Unsplash / Photo by Eberhard Grossgasteiger</a></figcaption>
+        </figure>
 
-      <figure class="photo">
-        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80&auto=format&fit=crop" alt="Peisaj">
-        <figcaption>
-          Peisaj — sursă: <a href="https://unsplash.com/photos/6jYoil2GhVk" target="_blank" rel="noopener">Unsplash / Photo by eberhard grossgasteiger</a>
-        </figcaption>
-      </figure>
-
-      <figure class="photo">
-        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80&auto=format&fit=crop" alt="Laptop și notițe">
-        <figcaption>
-          Laptop & notițe — sursă: <a href="https://unsplash.com/photos/AKeG0ygw4p8" target="_blank" rel="noopener">Unsplash / Photo by Christina Morillo</a>
-        </figcaption>
-      </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80&auto=format&fit=crop" alt="Birou de lucru laptop">
+          <figcaption>Birou de lucru — sursă: <a href="https://unsplash.com/photos/AKeG0ygw4p8" target="_blank" rel="noopener">Unsplash / Photo by Christina Morillo</a></figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="cv" class="container section cv-section">
       <h2>CV — Europass</h2>
-      <p>
-        CV-ul în format Europass este disponibil pentru descărcare (fișier PDF).
-      </p>
+      <p>CV în format Europass disponibil pentru descărcare:</p>
       <p>
         <a class="btn" href="CV - Bianca Maria Moștenaru.pdf" download>Descarcă CV (PDF)</a>
       </p>
 
-      <h3>Link extern util</h3>
-      <ul>
-        <li><a href="https://europa.eu/europass/ro/create-europass-cv" target="_blank" rel="noopener">Creează Europass CV — europa.eu</a></li>
-      </ul>
-    </section>
+      <div class="links-grid">
+        <div>
+          <h3>Link‑uri interne</h3>
+          <ul>
+            <li><a href="#home">Acasă</a></li>
+            <li><a href="#about">Despre mine</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
 
-    <section id="resources" class="container section resources">
-      <h2>Link-uri</h2>
-
-      <h3>Link-uri interne (4)</h3>
-      <ul>
-        <li><a href="#home">Acasă</a></li>
-        <li><a href="#about">Despre mine</a></li>
-        <li><a href="#gallery">Galerie</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <h3>Link-uri externe (4)</h3>
-      <ul>
-        <li><a href="https://www.instagram.com/biancamostenaru/" target="_blank" rel="noopener">Instagram (biancamostenaru)</a></li>
-        <li><a href="https://europa.eu/europass/ro/create-europass-cv" target="_blank" rel="noopener">Europass — creare CV</a></li>
-        <li><a href="https://www.ase.ro" target="_blank" rel="noopener">ASE (Academia de Studii Economice)</a></li>
-        <li><a href="https://www.cambridge.org" target="_blank" rel="noopener">Cambridge (examen PET / informații)</a></li>
-      </ul>
+        <div>
+          <h3>Link‑uri externe</h3>
+          <ul>
+            <li><a href="https://europa.eu/europass/ro/create-europass-cv" target="_blank" rel="noopener">Creează Europass CV</a></li>
+            <li><a href="https://www.instagram.com/biancamostenaru/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.ase.ro" target="_blank" rel="noopener">ASE</a></li>
+            <li><a href="https://www.cambridge.org" target="_blank" rel="noopener">Cambridge</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="container section contact">
       <h2>Contact</h2>
-      <p>Puteți trimite un mesaj către adresa mea. Formularul va genera un e-mail precompletat (se deschide clientul de mail implicit).</p>
+      <p>Trimite un mesaj — formularul deschide clientul de mail implicit cu un mesaj precompletat.</p>
 
-      <form id="contactForm">
+      <form id="contactForm" class="contact-form" autocomplete="on">
         <label>
-          Numele dvs.:
-          <input type="text" name="name" id="name" required />
+          Numele:
+          <input type="text" id="name" name="name" required placeholder="Numele tău">
         </label>
 
         <label>
           Email:
-          <input type="email" name="email" id="email" required />
+          <input type="email" id="email" name="email" required placeholder="ex: nume@exemplu.com">
         </label>
 
         <label>
           Subiect:
-          <input type="text" name="subject" id="subject" required />
+          <input type="text" id="subject" name="subject" required placeholder="Subiectul mesajului">
         </label>
 
         <label>
           Mesaj:
-          <textarea name="message" id="message" rows="6" required></textarea>
+          <textarea id="message" name="message" rows="6" required placeholder="Scrie mesajul aici..."></textarea>
         </label>
 
-        <button type="submit" class="btn">Trimite mesaj</button>
+        <div class="form-actions">
+          <button class="btn" type="submit">Trimite mesaj</button>
+          <button class="btn ghost" type="reset">Resetează</button>
+        </div>
       </form>
 
-      <p class="note">Dacă nu se deschide clientul de mail, copiați adresa: <strong>mostenarubianca25@stud.ase.ro</strong></p>
+      <p class="note">Alternativ, copiează adresa: <strong>mostenarubianca25@stud.ase.ro</strong></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Autor: <strong>Mostenaru Bianca Maria</strong> — &nbsp;Email: <a href="mailto:mostenarubianca25@stud.ase.ro">mostenarubianca25@stud.ase.ro</a></p>
-      <p>Proiect livrabil — site de prezentare personală</p>
+      <p>Autor: <strong>Mostenaru Bianca Maria</strong> — Email: <a href="mailto:mostenarubianca25@stud.ase.ro">mostenarubianca25@stud.ase.ro</a></p>
+      <p>Site creat pentru tema/proiect — design modern & responsive</p>
     </div>
   </footer>
 
